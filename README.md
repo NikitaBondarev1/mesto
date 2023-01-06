@@ -12,4 +12,4 @@
 
 # Ссылка gh-pages:
 
-* [Ссылка на проект "Mesto"](https://nikitabondarev1.github.io/mesto/)
+* [Ссылка на проект "Mesto"]()
