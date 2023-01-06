@@ -25,7 +25,7 @@ function formSubmit(evt) {
   evt.preventDefault();
 
   profileName.textContent = nameInput.value;
-  subtitleWork.textContent = subtitleWork.value;
+  profileSubtitle.textContent = subtitleWork.value;
   popup.classList.remove("popup_active");
 }
 popupInfo.addEventListener("submit", formSubmit);
