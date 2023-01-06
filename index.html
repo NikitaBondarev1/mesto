@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Mesto</title>
+</head>
+<body class="page">
+  <div class="page__container">
+    <header class="header">
+      <img class="header__logo" src="./images/logo.svg" alt="Логотип Место">
+    </header>
+    <main>
+      <section class="profile">
+        <img class="profile__avatar" src="./images/avatar.jpg" alt="Аватарка">
+        <div class="profile__info">
+          <div class="profile__personalization">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <button class="profile__edit" type="button"></button>
+          </div>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__add-button" type="button"></button>
+      </section>
+      <section class="elements" aria-label="Карточки с картинками">
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/Iceland-Vik.jpg" alt="Исландия">
+          <div class="element__mask-group">
+            <h2 class="element__text">Исландия, г.Вик</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/Iceland-coast.jpg" alt="Исландия">
+          <div class="element__mask-group">
+            <h2 class="element__text">Побережье</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/Reynisfjara.jpg" alt="Рейнисфьяра">
+          <div class="element__mask-group">
+            <h2 class="element__text">Рейнисфьяра</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/Peru-ballestas.jpg" alt="Перу, Баласстас">
+          <div class="element__mask-group">
+            <h2 class="element__text">Перу, Баласстас</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/Kavkaz.jpg" alt="Кавказ">
+          <div class="element__mask-group">
+            <h2 class="element__text">Кавказ</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+        <article class="element__card">
+          <img class="element__image" src="./images/cards/New Zealand.jpg" alt="Новая Зеландия">
+          <div class="element__mask-group">
+            <h2 class="element__text">Новая Зеландия</h2>
+            <button class="element__group" type="button"></button>
+          </div>
+        </article>
+      </section>
+
+
+      <section class="popup">
+        <div class="popup__container">
+          <button class="popup__close" type="button"></button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+    
+          <form class="popup__info" action="submit" name="popup__info">
+            <input class="popup__name popup__name_input" type="text" name="name" value="" placeholder="Имя">
+            <input class="popup__subtitle popup__subtitle_work" type="text" name="work" value="" placeholder="Род деятельности">
+            <button class="popup__button" type="submit">Сохранить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; 2022 Mesto Russia</p>
+    </footer>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
