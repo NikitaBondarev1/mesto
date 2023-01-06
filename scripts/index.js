@@ -6,7 +6,7 @@ const popupContainer = document.querySelector(".popup__container");
 const popupClose = document.querySelector(".popup__close");
 let popupInfo = document.querySelector(".popup__info");
 let nameInput = document.querySelector(".popup__name_input");
-let subtitleWork = document.querySelector(".popup__subtitle_work");
+let subtitleWork = document.querySelector(".popup__subtitle");
 
 buttonEdd.addEventListener("click", (evt) => {
   evt.preventDefault();
