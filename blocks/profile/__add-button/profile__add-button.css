@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   align-self: center;
   background-color: black;
-  background-image: url(../../../images/button/Add-Button.png);
+  background-image: url(../../../images/button/Add-Button.svg);
   background-position: center;
   background-size: auto;
 }
@@ -25,5 +25,6 @@
     margin-top: 33px;
     padding: 0;
     justify-self: center;
+    background-image: url(../../../images/button/Add-Button-mobile.svg);
   }
 }
