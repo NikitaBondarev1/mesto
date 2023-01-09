@@ -8,15 +8,14 @@ const popup = document.querySelector(".popup");
 const popupContainer = document.querySelector(".popup__container");
 const popupClose = document.querySelector(".popup__close");
 
-buttonEdd.addEventListener("click", () => {
+function openSubmit() {
   popup.classList.add("popup_opened");
+}
 
+buttonEdd.addEventListener("click", () => {
   nameInput.value = profileName.textContent;
   subtitleWork.value = profileSubtitle.textContent;
-});
-
-popupClose.addEventListener("click", () => {
-  popup.classList.remove("popup_opened");
+  openSubmit();
 });
 
 function formSubmit(evt) {
@@ -31,3 +30,5 @@ function closeSubmit() {
   popup.classList.remove('popup_opened');
 }
 popupInfo.addEventListener("submit", formSubmit);
+
+popupClose.addEventListener('click', closeSubmit);
