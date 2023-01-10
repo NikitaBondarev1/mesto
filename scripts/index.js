@@ -11,12 +11,10 @@ const popupClose = document.querySelector(".popup__close");
 function openSubmit() {
   popup.classList.add("popup_opened");
   nameInput.value = profileName.textContent;
+  subtitleWork.value = profileSubtitle.textContent;
 }
 
-buttonEdd.addEventListener("click", () => {
-  subtitleWork.value = profileSubtitle.textContent;
-  openSubmit();
-});
+buttonEdd.addEventListener("click", openSubmit);
 
 function formSubmit(evt) {
   evt.preventDefault();
