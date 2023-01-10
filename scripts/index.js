@@ -10,10 +10,10 @@ const popupClose = document.querySelector(".popup__close");
 
 function openSubmit() {
   popup.classList.add("popup_opened");
+  nameInput.value = profileName.textContent;
 }
 
 buttonEdd.addEventListener("click", () => {
-  nameInput.value = profileName.textContent;
   subtitleWork.value = profileSubtitle.textContent;
   openSubmit();
 });
